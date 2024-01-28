@@ -1,0 +1,4 @@
+.env
+venv
+job_portal_auth/migrations
+job_portal_app/migrations

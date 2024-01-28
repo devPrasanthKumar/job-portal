@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %} 
+{% block content %}
+{% include 'main/nav_bar.html' %}
+<h1>Hai index</h1>
+<p>{{request.user.username}}</p>
+
+<form action="{% url 'logout' %}" method="post">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-primary">Logout</button>
+</form>
+{% endblock %}
